@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Time Conversion",
+  "description": "Unix Timestamp to Human readable format Conversion",
+  "version": "0.1",
+  "browser_action": {
+  	"default_icon": "clock.png",
+    "default_popup": "index.html",
+    "author": "Arunrajkumar Dharumar"
+  }
+}
