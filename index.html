@@ -3,26 +3,40 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Unix Timestamp Conversion</title>
+    <style type="text/css">
+        .container {
+            width: 350px;
+        }
+        .row {
+            line-height: 25px;
+        }
+    </style>
 </head>
 <body>
 
     <div class="container">
         <div class="row">
+            <label for="timestamp">Unix Timestamp</label>
             <input type="text" name="timestamp" value="" id="timestamp">                
         </div>
         <div class="row">
-            <h5 id="localTime">—</h5>
+            <span>Local Time: </span>
+            <span id="localTime" style="font-weight:bold;">—</span>
         </div>
         <div class="row">
-            <h5 id="gmtTime">—</h5>
+            <span>GMT Time: </span>
+            <span id="gmtTime" style="font-weight:bold;">—</span>
         </div>
 
         <div class="row">
+            <span>Time Zone: </span>
+
             <select id="timezoneList"></select>
         </div>
 
         <div class="row">
-            <h5 id="selectedTimeZoneTime">—</h5>
+            <span id="selectedTimeZone">Selected Time: </span>
+            <span id="selectedTimeZoneTime" style="font-weight:bold;">—</span>
         </div>
 
     </div>

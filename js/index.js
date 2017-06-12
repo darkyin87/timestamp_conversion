@@ -6,6 +6,7 @@
 	        $convertedTimeLocal = $('#localTime'),
 	        $convertedTimeGMT = $('#gmtTime'),
 	        $selectedZoneTime = $('#selectedTimeZoneTime'),
+	        $selectedZone = $('#selectedTimeZone'),
 	        $timezoneList = $('#timezoneList');
 
 
@@ -30,6 +31,7 @@
 			$convertedTimeGMT.text(utc);
 			$convertedTimeLocal.text(utc.toDate());
 			$selectedZoneTime.text(moment.tz(Number(timestamp), $timezoneList.val()));
+			$selectedZone.text($timezoneList.val() + ' Time: ');
 		};
 
 		// start at now
